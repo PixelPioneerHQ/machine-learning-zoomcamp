@@ -3,13 +3,22 @@
 > Note: sometimes your answer doesn't match one of 
 > the options exactly. That's fine. 
 > Select the option that's closest to your solution.
-> If it's exactly in between two options, select the higher value.
 
+Solution: [homework.ipynb](homework.ipynb)
 
-In this homework, we will use the lead scoring dataset. Download it from [here](https://raw.githubusercontent.com/alexeygrigorev/datasets/master/course_lead_scoring.csv).
+In this homework, we will use the Bank Marketing dataset. Download it from [here](https://archive.ics.uci.edu/static/public/222/bank+marketing.zip).
 
+You can do it with `wget`:
 
-In this dataset our desired target for classification task will be `converted` variable - has the client signed up to the platform or not. 
+```bash
+wget https://archive.ics.uci.edu/static/public/222/bank+marketing.zip
+unzip bank+marketing.zip 
+unzip bank.zip
+```
+
+We need `bank-full.csv`.
+
+In this dataset the target variable is `y` variable - has the client subscribed a term deposit or not. 
 
 ### Data preparation
 
@@ -138,5 +147,5 @@ If you have ties, select the score with the lowest std. If you still have ties, 
 
 ## Submit the results
 
-* Submit your results here: https://courses.datatalks.club/ml-zoomcamp-2025/homework/hw04
-* If your answer doesn't match options exactly, select the closest one. If the answer is exactly in between two options, select the higher value.
+* Submit your results here: https://courses.datatalks.club/ml-zoomcamp-2024/homework/hw04
+* If your answer doesn't match options exactly, select the closest one
