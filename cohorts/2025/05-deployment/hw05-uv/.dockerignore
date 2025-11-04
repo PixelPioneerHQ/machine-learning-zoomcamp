@@ -1,0 +1,15 @@
+__pycache__/
+.venv/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.ipynb_checkpoints/
+node_modules/
+.*
+!pyproject.toml
+!uv.lock
+!Dockerfile
+!service.py
+

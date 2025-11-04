@@ -1,0 +1,14 @@
+FROM agrigorev/zoomcamp-model:2025
+WORKDIR /code
+
+# Bring in project metadata for dependency install
+COPY pyproject.toml uv.lock ./
+
+# Install dependencies with uv (pip fallback if preferred)
+RUN python -m pip install --no-cache-dir uv  && uv sync --frozen --no-cache
+
+# Copy FastAPI service (expects pipeline_v2.bin present already)
+COPY service.py ./
+
+EXPOSE 8000
+CMD ["uvicorn", "service:app", "--host", "0.0.0.0", "--port", "8000"]
