@@ -1,5 +1,12 @@
 ## 10. Kubernetes and TensorFlow Serving
 
+Note: these materials are partly outdated, which
+is why we recorded a workshop that updates this module.
+You will find the materials in the [workshop/](workshop/) folder
+
+You don't need to watch any of the module videos. But lessons 10.5 and 10.8 may still be useful.
+
+
 - 10.1 [Overview](01-overview.md)
 - 10.2 [TensorFlow Serving](02-tensorflow-serving.md)
 - 10.3 [Creating a pre-processing service](03-preprocessing.md)
